@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<section class="section-account"><!-- section account -->
+		<div class="container">
+
+			    <div class="section-account__balance"><!-- section account balance -->
+					<div class="section-account__balance-num">1000 руб.</div>
+					<div class="section-account__balance-icon">
+						<a href="#" 
+						    data-toggle="popover" 
+						    title="Баланс:"
+							data-content="1000 руб.">
+							<img src="img/account-rubl-icon.png" alt="">
+						</a>
+					</div>
+				</div><!-- section account balance -->
+
+				<div class="section-account__wrapper"><!-- section account wrapper -->
+
+					<div class="section-account__title"><!-- section account title -->
+						<h3>Выберите способ оплаты услуг сервиса</h3>
+						<div class="section-account__attention">
+							<div>
+								<p>*Изменить выбранный способ оплаты в дальнейшем можно будет, обратившись в
+									техподдержку</p>
+							</div>
+							<div class="section-account__tooltip-wrap" data-toggle="modal" data-target="#sectionAccountModal">
+								<div class="section-account__tooltip-icon" data-toggle="tooltip"
+								     title="*Изменить выбранный способ оплаты в дальнейшем можно будет, обратившись в техподдержку"
+								     data-placement="left">
+									<div>&#161;</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- section account title -->
+
+					<div class="section-account__blocks row"><!-- section account blocks -->
+						<div class="col-lg-6">
+							<div class="panel panel-default">
+								<div class="panel-body">
+
+									<div class="panel-caption"><!-- panel caption -->
+										<h3>Оплата по постоплате</h3>
+										<p>При этом способе оплаты вы получаете счет в конце месяца за: </p>
+									</div><!-- panel caption -->
+
+									<div class="panel-block row"><!-- panel block -->
+										<div class="panel-block__img col-md-7">
+											<div>
+												<img src="img/received-feedbacks-icon.png" alt="">
+											</div>
+											<div>
+												<p>Полученные <br>отклики</p>
+											</div>
+										</div>
+										<div class="panel-block__price col-md-5">
+											<div class="panel-block__equal">
+												<div class="panel-block__equal-icon"></div>
+											</div>
+											<div>
+												<p>200 руб.</p>
+												<span>за отклик *</span>
+											</div>
+										</div>
+									</div><!-- panel block -->
+
+									<div class="panel-block row"><!-- panel block -->
+										<div class="panel-block__img col-md-7">
+											<div>
+												<img src="img/sent-invitations-icon.png" alt="">
+											</div>
+											<div>
+												<p>Отправленные <br>приглашения</p>
+											</div>
+										</div>
+
+										<div class="panel-block__price col-md-5">
+											<div class="panel-block__equal">
+												<div class="panel-block__equal-icon"></div>
+											</div>
+											<div class="">
+												<p>100 руб.</p>
+												<span>за отправленное <br>приглашение*</span>
+											</div>
+										</div>
+									</div><!-- panel block -->
+
+									<div class="panel-caption panel-caption__margin-top"><!-- panel caption -->
+										<p>С тарифами вы можете ознакомиться в разделе "Калькулятор"</p>
+									</div><!-- panel caption -->
+
+									<div class="panel-button-outline"><!-- panel button outline -->
+										<div>
+											<a href="#" class="btn btn-default">
+												<div>
+													<div class="btn-icon"></div>
+												</div>
+												<div class="btn-text">Перейти в калькулятор</div>
+											</a>
+										</div>
+									</div><!-- panel button outline -->
+
+									<div class="panel-text"><!-- panel text -->
+										<p>* Вы можете создавать неограниченное количество программ к своим Учебным
+											Заведениям, на которые вы будете получать отклики от соискателей,
+											зарегистрированных в сервисе. Вы сможете увидеть контакты откликнувшихся.
+											Также с помощью раздела "Каталог" Вы сможете отправлять приглашения
+											потенциальным кандидатам к обучению.</p>
+									</div><!-- panel text -->
+
+									<div class="panel-text"><!-- panel text -->
+										<p>* В конце каждого календарного месяца вы сможете увидеть выписку по
+											фактическим откликам и вашим предложениям к соискателям.</p>
+									</div><!-- panel text -->
+
+									<div class="panel-text"><!-- panel text -->
+										<p>* Вам необходимо поддерживать положительный баланс чтобы пользоваться
+											услугами сервиса в полной мере.</p>
+									</div><!-- panel text -->
+
+									<div class="panel-text"><!-- panel text -->
+										<p>* После списания, даже если вы вышли в минус, у вас есть 14 дней на
+											пополнение счета. Через 14 дней нахождения в отрицательном балансе,
+											возможности
+											сервиса урезаются</p>
+									</div><!-- panel text -->
+
+									<div class="panel-button">
+										<div>
+											<button class="btn btn-default" name="account" type="button"
+												data-toggle="modal"
+												data-target="#sectionAccountModal"
+												value="1">Выбрать оплату
+											</button>
+										</div>
+										<div class="panel-button__text">
+											<p>*Цена действительна с 1.01.2019</p>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="panel panel-default">
+								<div class="panel-body">
+
+									<div class="panel-caption"><!-- panel caption -->
+										<h3>Оплата по предоплате</h3>
+										<p>С тарифами вы можете ознакомиться в разделе "Калькулятор"</p>
+									</div><!-- panel caption -->
+
+									<div class="panel-button-outline"><!-- panel button outline -->
+										<div>
+											<a href="#" class="btn btn-default">
+												<div>
+													<div class="btn-icon"></div>
+												</div>
+												<div class="btn-text">Перейти в калькулятор</div>
+											</a>
+										</div>
+									</div><!-- panel button outline -->
+
+									<div class="panel-text"><!-- panel text -->
+										<p>*При этом способе оплаты вы покупаете размещение ваших программ и семинаров в
+											выбранном количестве и на выбранное время. </p>
+										<p>С тарифами вы можете ознакомиться в калькуляторе</p>
+									</div><!-- panel text -->
+
+									<div class="panel-text"><!-- panel text -->
+										<p>*На добавленные вами программы могут сколько угодно откликаться, вы можете
+											приглашать к обучению сколько угодно кандидатов. </p>
+									</div><!-- panel text -->
+
+									<div class="panel-button"><!-- panel button -->
+										<div>
+											<button class="btn btn-default" name="account" type="button"
+												data-toggle="modal"
+												data-target="#sectionAccountModal"
+												value="0">Выбрать оплату
+											</button>
+										</div>
+									</div><!-- panel button -->
+
+								</div>
+							</div>
+						</div>
+					</div><!-- section account blocks -->
+
+				</div><!-- section account wrapper -->
+
+		</div><!-- container -->
+
+		<!-- Modal -->
+		<div class="modal fade section-account__modal" id="sectionAccountModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+
+					<div class="modal-body">
+						<form action="" method="post">
+							<div class="form-group">
+								<input type="text" placeholder="Имя" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="tel" placeholder="Телефон" class="form-control">
+							</div>
+							<div class="form-group">
+								<button class="btn btn-default btn-block">Связаться</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="section-account__modal-close" data-dismiss="modal" aria-label="Close"></div>
+
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+
+	</section><!-- section account -->
+
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+</body>
+</html>

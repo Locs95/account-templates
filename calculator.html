@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<section class="section-account"><!-- section account -->
+		<div class="container">
+
+			    <div class="section-account__balance"><!-- section account balance -->
+					<div class="section-account__balance-num">1000 руб.</div>
+					<div class="section-account__balance-icon">
+						<a href="#" 
+						    data-toggle="popover" 
+						    title="Баланс:"
+							data-content="1000 руб.">
+							<img src="img/account-rubl-icon.png" alt="">
+						</a>
+					</div>
+				</div><!-- section account balance -->
+
+				<div class="section-account__wrapper"><!-- section account wrapper -->
+
+					<div class="section-account__title"><!-- section account title -->
+						<h3>Ваш способ оплаты - постоплата</h3>
+						<div class="section-account__attention">
+							<div>
+								<p>*Изменить выбранный способ оплаты в дальнейшем можно будет, обратившись в
+									техподдержку</p>
+							</div>
+							<div class="section-account__tooltip-wrap"  data-toggle="modal" data-target="#sectionAccountModal">
+								<div class="section-account__tooltip-icon" data-toggle="tooltip"
+								     title="*Изменить выбранный способ оплаты в дальнейшем можно будет, обратившись в техподдержку"
+								     data-placement="left">
+									<div>&#161;</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- section account title -->
+
+					<div class="section-account__blocks row"><!-- section account blocks -->
+
+						<div class="col-lg-12">
+							<div class="panel panel-default">
+								<div class="panel-body">
+
+									<div class="panel-caption panel-caption_no-margin"><!-- panel caption -->
+										<h3>Оплата по постоплате</h3>
+										<p>Вы платите за: </p>
+									</div><!-- panel caption -->
+
+									<div class="row">
+
+										<div class="panel-block col-lg-6"><!-- panel block -->
+											<div class="panel-block__img col-md-7">
+												<div>
+													<img src="img/received-feedbacks-icon.png"
+													     alt="">
+												</div>
+												<div>
+													<p>Полученные <br>отклики</p>
+												</div>
+											</div>
+											<div class="panel-block__price col-md-5">
+												<div class="panel-block__equal">
+													<div class="panel-block__equal-icon"></div>
+												</div>
+												<div>
+													<p>200 руб.</p>
+													<span>* Актуальные цены за отклики вы можете увидеть в калькуляторе ниже</span>
+												</div>
+											</div>
+										</div><!-- panel block -->
+
+										<div class="panel-block col-lg-6"><!-- panel block -->
+											<div class="panel-block__img col-md-7">
+												<div>
+													<img src="img/sent-invitations-icon.png" alt="">
+												</div>
+												<div>
+													<p>Отправленные <br>приглашения</p>
+												</div>
+											</div>
+
+											<div class="panel-block__price col-md-5">
+												<div class="panel-block__equal">
+													<div class="panel-block__equal-icon"></div>
+												</div>
+												<div class="">
+													<p>100 руб.</p>
+													<span>* Актуальные цены за предложения вы можете увидеть в калькуляторе ниже</span>
+												</div>
+											</div>
+										</div><!-- panel block -->
+
+									</div><!-- row -->
+
+
+									<div class="panel-text"><!-- panel text -->
+										<p>Выписку по фактическим откликам и вашим предложениям к соискателям вы увидите
+											в конце календарного месяца в разделе "Заказы". Поддерживайте положительный
+											баланс, чтобы пользоваться услугами сервиса в полной мере. </p>
+									</div><!-- panel text -->
+
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-12"><!-- select -->
+							<section class="section-account__select">
+								<div class="col-lg-4 section-account__select-block">
+									<div class="form-group section-account__select-wrap">
+										<select class="custom select form-control" id="" name="city">
+											<option value="city-1" selected>Москва</option>
+											<option value="city-2">Саратов</option>
+											<option value="city-3">Калуга</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-4 section-account__select-block">
+									<div class="form-group section-account__select-wrap">
+										<select class="form-control" id="" name="course">
+											<option value="course-1">Подготовительные курсы</option>
+											<option value="course-2">Подготовительные курсы</option>
+											<option value="course-3">Подготовительные курсы</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-2 section-account__select-price">
+									<div class="section-account__select-price-text">
+										<p>Лид откликнулся</p>
+										<p>руб.</p>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" value="500" disabled>
+									</div>
+								</div>
+								<div class="col-lg-2 section-account__select-price">
+									<div class="section-account__select-price-text">
+										<p>Пригласил лида</p>
+										<p>руб.</p>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" value="1000" disabled>
+									</div>
+								</div>
+							</section>
+						</div><!-- select -->
+
+						<div class="col-lg-12">
+							<div class="panel panel-default">
+								<div class="panel-body">
+
+									<div class="panel-caption panel-caption_bg-yellow panel-caption_no-margin">
+										<!-- panel caption -->
+										<h3>Реклама</h3>
+									</div><!-- panel caption -->
+
+									<div class="panel-list"><!-- panel list-->
+
+											<div class="panel-list__item"><!-- panel list item -->
+
+												<div>
+													<label class="panel-list__checkbox container-checkbox"
+													       for="services-1">
+														<input type="checkbox" name="services"
+														       id="services-1"
+														       value=""/>
+														<span class="panel-checkmark"></span>
+														<div class="panel-checkbox-text">
+															<span>Реклама УЗ в поисковой строке - 14 дней</span>
+														</div>
+													</label>
+												</div>
+
+												<div>
+													<div class="panel-quantity">
+														<div class="panel-quantity__box-wrap">
+															<input class="col text-center form-control panel-quantity__box panel-quantity__box_no-border"
+															       type="text"
+															       name="services_counter-1"
+															       value="0">
+															<div class="panel-quantity__box-buffer"></div>
+														</div>
+														<div class="panel-quantity__buttons">
+															<span class="panel-quantity__plus"></span>
+															<span class="panel-quantity__minus"></span>
+														</div>
+													</div>
+												</div>
+
+											</div><!-- panel list item -->
+
+											<div class="panel-list"><!-- panel list-->
+
+											<div class="panel-list__item"><!-- panel list item -->
+
+												<div>
+													<label class="panel-list__checkbox container-checkbox"
+													       for="services-2">
+														<input type="checkbox" name="services"
+														       id="services-2"
+														       value=""/>
+														<span class="panel-checkmark"></span>
+														<div class="panel-checkbox-text">
+															<span>Банерная реклама - 14 дней</span>
+														</div>
+													</label>
+												</div>
+
+												<div>
+													<div class="panel-quantity">
+														<div class="panel-quantity__box-wrap">
+															<input class="col text-center form-control panel-quantity__box panel-quantity__box_no-border"
+															       type="text"
+															       name="services_counter-2"
+															       value="0">
+															<div class="panel-quantity__box-buffer"></div>
+														</div>
+														<div class="panel-quantity__buttons">
+															<span class="panel-quantity__plus"></span>
+															<span class="panel-quantity__minus"></span>
+														</div>
+													</div>
+												</div>
+
+											</div><!-- panel list item -->
+
+											<div class="panel-list__item"><!-- panel list item -->
+
+												<div>
+													<label class="panel-list__checkbox container-checkbox"
+													       for="services-3">
+														<input type="checkbox" name="services"
+														       id="services-3"
+														       value=""/>
+														<span class="panel-checkmark"></span>
+														<div class="panel-checkbox-text">
+															<span>Баннер (150*100) - главная страница сайта - 30 дней</span>
+														</div>
+													</label>
+												</div>
+
+												<div>
+													<div class="panel-quantity">
+														<div class="panel-quantity__box-wrap">
+															<input class="col text-center form-control panel-quantity__box panel-quantity__box_no-border"
+															       type="text"
+															       name="services_counter-3"
+															       value="0">
+															<div class="panel-quantity__box-buffer"></div>
+														</div>
+														<div class="panel-quantity__buttons">
+															<span class="panel-quantity__plus"></span>
+															<span class="panel-quantity__minus"></span>
+														</div>
+													</div>
+												</div>
+
+											</div><!-- panel list item -->
+
+											<div class="panel-list__item"><!-- panel list item -->
+
+												<div>
+													<label class="panel-list__checkbox container-checkbox"
+													       for="services-4">
+														<input type="checkbox" name="services"
+														       id="services-4"
+														       value=""/>
+														<span class="panel-checkmark"></span>
+														<div class="panel-checkbox-text">
+															<span>Ваша рекламная статья (100% размещение + 1 ссылка) - блог сайта + анонс в соц сетях</span>
+														</div>
+													</label>
+												</div>
+
+												<div>
+													<div class="panel-quantity">
+														<div class="panel-quantity__box-wrap">
+															<input class="col text-center form-control panel-quantity__box panel-quantity__box_no-border"
+															       type="text"
+															       name="services_counter-4"
+															       value="0">
+															<div class="panel-quantity__box-buffer"></div>
+														</div>
+														<div class="panel-quantity__buttons">
+															<span class="panel-quantity__plus"></span>
+															<span class="panel-quantity__minus"></span>
+														</div>
+													</div>
+												</div>
+
+											</div><!-- panel list item -->
+
+											<div class="panel-list__item"><!-- panel list item -->
+
+												<div>
+													<label class="panel-list__checkbox container-checkbox"
+													       for="services-5">
+														<input type="checkbox" name="services"
+														       id="services-5"
+														       value=""/>
+														<span class="panel-checkmark"></span>
+														<div class="panel-checkbox-text">
+															<span>Рекламная статья от наших авторов «под ключ» + блог сайта + анонс в соц сетях</span>
+														</div>
+													</label>
+												</div>
+
+												<div>
+													<div class="panel-quantity">
+														<div class="panel-quantity__box-wrap">
+															<input class="col text-center form-control panel-quantity__box panel-quantity__box_no-border"
+															       type="text"
+															       name="services_counter-5"
+															       value="0">
+															<div class="panel-quantity__box-buffer"></div>
+														</div>
+														<div class="panel-quantity__buttons">
+															<span class="panel-quantity__plus"></span>
+															<span class="panel-quantity__minus"></span>
+														</div>
+													</div>
+												</div>
+
+											</div><!-- panel list item -->
+
+											<div class="panel-list__item"><!-- panel list item -->
+
+												<div>
+													<label class="panel-list__checkbox container-checkbox"
+													       for="services-6">
+														<input type="checkbox" name="services"
+														       id="services-6"
+														       value=""/>
+														<span class="panel-checkmark"></span>
+														<div class="panel-checkbox-text">
+															<span>Рекламный пост - соц сети</span>
+														</div>
+													</label>
+												</div>
+
+												<div>
+													<div class="panel-quantity">
+														<div class="panel-quantity__box-wrap">
+															<input class="col text-center form-control panel-quantity__box panel-quantity__box_no-border"
+															       type="text"
+															       name="services_counter-6"
+															       value="0">
+															<div class="panel-quantity__box-buffer"></div>
+														</div>
+														<div class="panel-quantity__buttons">
+															<span class="panel-quantity__plus"></span>
+															<span class="panel-quantity__minus"></span>
+														</div>
+													</div>
+												</div>
+
+											</div><!-- panel list item -->
+
+											<div class="panel-list__item"><!-- panel list item -->
+
+												<div>
+													<label class="panel-list__checkbox container-checkbox"
+													       for="services-7">
+														<input type="checkbox" name="services"
+														       id="services-7"
+														       value=""/>
+														<span class="panel-checkmark"></span>
+														<div class="panel-checkbox-text">
+															<span>Создание индивидуального баннера</span>
+														</div>
+													</label>
+												</div>
+
+												<div>
+													<div class="panel-quantity">
+														<div class="panel-quantity__box-wrap">
+															<input class="col text-center form-control panel-quantity__box panel-quantity__box_no-border"
+															       type="text"
+															       name="services_counter-7"
+															       value="0">
+															<div class="panel-quantity__box-buffer"></div>
+														</div>
+														<div class="panel-quantity__buttons">
+															<span class="panel-quantity__plus"></span>
+															<span class="panel-quantity__minus"></span>
+														</div>
+													</div>
+												</div>
+
+											</div><!-- panel list item -->
+									
+									</div><!-- panel list-->
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-lg-12">
+							<div class="panel panel-default panel_no-shadow">
+								<div class="panel-body">
+
+									<div class="section-account__cost-block"><!-- section account cost block -->
+
+										<div class="section-account__cost-block-item">
+											<div class="panel-caption panel-caption_bg-yellow panel-caption_no-margin">
+												<!-- panel caption -->
+												<h3>Стоимость</h3>
+											</div><!-- panel caption -->
+											<div class="section-account__cost-price">
+												<div>
+													<h2>5450000</h2>
+													<p>руб.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="section-account__cost-block-item col-lg-6">
+											<div class="panel-caption panel-caption_outline panel-caption_no-margin">
+												<h3>-50% До 31.03.2019</h3>
+											</div>
+											<div class="section-account__cost-text">
+												<div class="section-account__cost-text-item">
+													<div>
+														<p>Реклама:</p>
+													</div>
+													<div>
+														<p>Банерная реклама</p>
+														<p>Баннер (150*100) - главная страница сайта</p>
+														<p>Рекламный пост - соц сети</p>
+													</div>
+												</div>
+												<div class="section-account__cost-text-item">
+													<div>
+														<p>Скидка:</p>
+													</div>
+													<div>
+														<p>50%</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div><!-- section account cost block -->
+
+
+									<div class="section-account__cost-block section-account__cost-block_margin-top section-account__cost-block_justified">
+										<!-- section account cost block -->
+										<div class="section-account__cost-checkbox">
+											<label class="container-checkbox" for="agree_contract">
+												<input type="checkbox" name="agree_contract"
+												       id="agree_contract"
+												       value=""/>
+												<span class="panel-checkmark"></span>
+												<div class="panel-checkbox-text">
+												<span>
+													Согласен с договором офертой
+												</span>
+												</div>
+											</label>
+										</div>
+										<div class="panel-button panel-button_no-margin">
+											<button class="btn btn-default">Заказать</button>
+										</div>
+									</div><!-- section account cost block -->
+
+
+								</div><!-- panel body -->
+							</div>
+						</div>
+
+					</div><!-- section account blocks -->
+
+				</div><!-- section account wrapper -->
+
+			</div>
+
+		</div><!-- container -->
+
+		<!-- Modal -->
+		<div class="modal fade section-account__modal" id="sectionAccountModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+
+					<div class="modal-body">
+						<form action="" method="post">
+							<div class="form-group">
+								<input type="text" placeholder="Имя" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="tel" placeholder="Телефон" class="form-control">
+							</div>
+							<div class="form-group">
+								<button class="btn btn-default btn-block">Связаться</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="section-account__modal-close" data-dismiss="modal" aria-label="Close"></div>
+
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+
+</section><!-- section account -->
+
+ <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/main.js"></script>
+	
+</body>
+</html>
